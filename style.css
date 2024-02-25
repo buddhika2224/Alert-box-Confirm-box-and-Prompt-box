@@ -1,0 +1,20 @@
+#headUnder{
+  color: bisque;
+}
+
+#alertBox{
+  color: red;
+  font-size: x-large;
+}
+
+#confirmBox {
+  color: gold;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+#promptBox{
+  color: rgb(15, 24, 138);
+  font-size: x-large;
+  font-stretch: extra-expanded;
+}
