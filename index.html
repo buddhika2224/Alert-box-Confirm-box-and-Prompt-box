@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+      <h1>Alert box, Confirm box, and Prompt box.</h1>
+      <p id="headUnder">
+        JavaScript has three kind of popup boxes: Alert box, Confirm box, and
+        Prompt box.
+      </p>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Alert box</h3>
+          <p>
+            An alert box is often used if you want to make sure information
+            comes through to the user.When an alert box pops up, the user will
+            have to click "OK" to proceed.
+          </p>
+          <p id="alertBox"></p>
+          <br />
+          <button type="button" class="btn btn-danger" onclick="showAlert()">
+            Alert
+          </button>
+        </div>
+        <div class="col-sm-4">
+          <h3>Confirm box</h3>
+          <p>
+            A confirm box is often used if you want the user to verify or accept
+            something. When a confirm box pops up, the user will have to click
+            either "OK" or "Cancel" to proceed. If the user clicks "OK", the box
+            returns true. If the user clicks "Cancel", the box returns false.
+          </p>
+          <p id="confirmBox"></p>
+          <br />
+          <button type="button" class="btn btn-success" onclick="showConfirm()">
+            Confirm
+          </button>
+        </div>
+        <div class="col-sm-4">
+          <h3>Prompt box.</h3>
+          <p>
+            A prompt box is often used if you want the user to input a value
+            before entering a page. When a prompt box pops up, the user will
+            have to click either "OK" or "Cancel" to proceed after entering an
+            input value.If the user clicks "OK" the box returns the input value.
+            If the user clicks "Cancel" the box returns null.
+          </p>
+          <p id="promptBox"></p>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            onclick="showPrompt()"
+          >
+            Prompt
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
